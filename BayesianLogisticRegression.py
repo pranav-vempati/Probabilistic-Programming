@@ -27,7 +27,7 @@ W = Normal(loc = tf.zeros(feature_dimensionality), scale = 2.0 * tf.ones(feature
 
 b = Normal(loc = tf.zeros([]), scale = 2.0 * tf.ones([]))
 
-y = Bernoulli(logits = ed.dot(X_train,w) + b)
+y = Bernoulli(logits = ed.dot(X_train,w) + b) 
 
 qw_loc = tf.get_variable("qw_loc", [feature_dimensionality])
 
